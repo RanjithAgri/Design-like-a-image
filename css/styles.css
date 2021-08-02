@@ -1,0 +1,108 @@
+a{
+    text-decoration: none;
+    color: black;
+    background: white;
+    font-weight: bold;
+}
+/* front page section starts here */
+.frontPage{
+    margin: 40px 40px;
+    display: grid;
+    grid-template-rows: 30% 70%;
+    grid-template-columns: 20% 60% 20%;
+}
+section>div>nav>a:hover{
+    color: orangered;
+}
+
+#logo{
+    padding-left: 25px;
+    width: 80%;
+    height: 50px;
+}
+#header{
+    display: flex;
+	flex-wrap: wrap;
+	align-self: center; 
+	justify-content: space-evenly; 
+    color: black;
+    padding: 0px 150px;
+    margin-top: 25px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+
+}
+/* Second row in front page */
+#secondRow{
+    display: grid;
+    grid-template-columns: 50% 60% ;
+    grid-template-areas: "secondRowDiv frontPageImage";
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+
+}
+#frontPageImage{
+    padding: 10px 50px;
+    width: 70%;
+    height: 100%;
+}
+#secondRowDiv{
+    grid-area:secondRowDiv;
+    padding-left: 65px; 
+    margin-top: -30px;   
+}
+#secondRowPara{
+    font-weight:900;
+    font-family: 'Montserrat';
+    font-size: 50px;
+}
+
+/*button Section*/
+.btnGetStarted{
+    background: orangered;
+    color: white;
+    border: white;
+    border-radius: 20px;
+    padding: 12px 25px;
+    font-weight: bold;
+}
+.btnLogin{
+    color: black;
+    background: white;
+    border: white;
+    bord
+    er-radius: 15px;
+    padding: 10px 25px;
+    font-weight: bold;
+}
+.btnTryItFree{
+    color: white;
+    background: black;
+    border: white;
+    border-radius: 15px;
+    padding: 10px 25px;
+    font-size: 12px;
+    font-weight: bold;
+}
+.btnGetStarted:hover,.btnLogin:hover,.btnTryItFree:hover{
+    cursor: pointer;
+    transform: scale(.95);
+
+}
+
+
+/*footer section*/
+#footer{
+    display: flex;
+	justify-content: space-evenly;
+    margin: 40px 40px;
+}
+.imgflt{
+    width: 100px;
+    opacity: 0.5;    
+
+}
+.imgflt:hover{
+    opacity: unset;
+    cursor: pointer;
+}
